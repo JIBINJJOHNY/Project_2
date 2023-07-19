@@ -1,0 +1,91 @@
+/*------ Global Settings------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: white;
+}
+
+h1 {
+    font-size: 3.4rem;
+    color: #1B366A;
+    margin-bottom: 1rem;
+}
+
+.menu {
+    text-align: center;
+}
+
+.mainpage_menus {
+    background: url(../images/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: top;
+    box-sizing: border-box;
+    width: 50%;
+    height: 65vh;
+    max-height: 600px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.mainmenu_btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+    padding: 1rem 10px;
+    width: 20rem;
+    text-align: center;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(to top, #edecdf, #f6fd1e);
+    cursor: pointer;
+
+}
+
+.main_footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.main_footer ul {
+    list-style-type: none;
+}
+
+.main_footer a i {
+    font-size: 2rem;
+    color: #1B366A;
+}
