@@ -14,27 +14,42 @@
     <title>Fun Learn</title>
 </head>
 
-<body>
+<body onload="initializeApp()">
     <!--Header -->
 
     <header class="menu">
-        <h1 class="app_name">Fun Learn</h1>
-        <p class="app_slogan">Where Learning is Playful!</p>
+        <a href="letteroption.html" class="return-button">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
+        <div class="title">
+            <h1 class="app_name">Fun Learn</h1>
+            <p class="app__slogan">Where Learning is Playful!</p>
+        </div>
     </header>
 
     <!-- Main menu -->
 
     <main class="mainpage_menus">
-
-        <!--Link to the card.html-->
-
-        <div class="rules">
-            <a href="#" aria-label="go to rules for fun learn app" class="mainmenu_btn">RULES</a>
+        <!-- Card element with a flip functionality when clicked -->
+        <div class="card" onclick="flipCard()">
+            <!-- Front side of the card -->
+            <div class="card-front">
+                <h2 id="letter">A</h2> <!-- Placeholder for the letter -->
+            </div>
+            <!-- Back side of the card -->
+            <div class="card-back">
+                <img id="image" src="assets/images/apple.png" alt="Apple" width="200" height="200">
+                <!-- Image of the item -->
+                <p id="word">Apple</p> <!-- Word corresponding to the letter -->
+            </div>
         </div>
-        <div class="enter">
-            <a href="option.html" aria-label="go to options alphabets or numbers" class="mainmenu_btn">ENTER</a>
-        </div>
+        <div class="button-container">
+            <!-- Button to go to the previous letter -->
+            <button id="backButton" onclick="previousLetter()" style="display: none;">Back</button>
 
+            <!-- Button to go to the next letter -->
+            <button id="nextButton" onclick="nextLetter()">Next</button>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="main_footer">
@@ -57,7 +72,7 @@
     <script src="https://kit.fontawesome.com/808d24aade.js" crossorigin="anonymous"></script>
     <!--Script for js file-->
 
-    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/alphabets.js"></script>
 </body>
 
 </html>

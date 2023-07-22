@@ -19,21 +19,38 @@
 
     <header class="menu">
         <h1 class="app_name">Fun Learn</h1>
-        <p class="app_slogan">Where Learning is Playful!</p>
+        <p class="app__slogan">Where Learning is Playful!</p>
+
     </header>
 
     <!-- Main menu -->
 
     <main class="mainpage_menus">
+        <div class="card">
+            <div class="card-front">
+                <div class="image">
+                    <!-- Image will be added dynamically -->
+                </div>
+            </div>
+            <div class="card-back">
+                <h2 class="word">Apple</h2>
 
-        <!--Link to the card.html-->
+            </div>
+        </div>
+        <button id="card__next">Next</button>
+        <button id="voice__option--GB">Speak (GB)</button>
 
-        <div class="rules">
-            <a href="#" aria-label="go to rules for fun learn app" class="mainmenu_btn">RULES</a>
+
+        <!-- Modal -->
+        <div id="modal" class="modal modal--hidden">
+            <div class="modal-content">
+                <h2>Instructions</h2>
+                <p>... Instructions for the quiz ...</p>
+                <button id="close-modal">Close</button>
+            </div>
         </div>
-        <div class="enter">
-            <a href="option.html" aria-label="go to options alphabets or numbers" class="mainmenu_btn">ENTER</a>
-        </div>
+
+        <div id="overlay" class="overlay overlay--hidden"></div>
 
     </main>
     <!-- Footer -->
@@ -57,7 +74,7 @@
     <script src="https://kit.fontawesome.com/808d24aade.js" crossorigin="anonymous"></script>
     <!--Script for js file-->
 
-    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/alphabets.js"></script>
 </body>
 
 </html>

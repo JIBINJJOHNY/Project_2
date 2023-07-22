@@ -1,5 +1,4 @@
 /*------ Global Settings------*/
-
 *,
 *::before,
 *::after {
@@ -16,76 +15,287 @@ p {
     padding: 0;
 }
 
-/* Body Styling */
-
+/* CSS styles for the body element */
 body {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    font-family: 'Comic Sans MS', sans-serif;
-    background-color: white;
-}
-
-h1 {
-    font-size: 3.4rem;
-    color: #1B366A;
-    margin-bottom: 1rem;
-}
-
-.menu {
-    text-align: center;
-}
-
-.mainpage_menus {
-    background: url(../images/1.png);
+    background: url(../images/main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    object-position: top;
-    box-sizing: border-box;
-    width: 50%;
-    height: 65vh;
-    max-height: 600px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Comic Sans MS, sans-serif;
+
 }
 
-.mainmenu_btn {
-    font-size: 1.5rem;
-    font-weight: bold;
+/* CSS styles for the container element */
+.container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem 10px;
-    width: 20rem;
-    text-align: center;
-    border: 1px solid yellow;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    color: black;
-    background-image: linear-gradient(to top, #edecdf, #f6fd1e);
-    cursor: pointer;
+    justify-content: center;
+    flex: 1;
+}
 
+/* CSS for the header */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1B366A;
+    padding: 10px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.app_name,
+.app__slogan {
+    margin: 0;
+}
+
+.return-button {
+    color: #1B366A;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.return-button i {
+    margin-right: 5px;
+}
+
+.return-button i:hover {
+    transform: scale(1.5);
+}
+
+
+.app_name {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.app__slogan {
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* CSS styles for the card element */
+.card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.card h2 {
+    font-size: 80px;
+    color: #1B366A;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.card p {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #1B366A;
+    font-weight: bold;
+}
+
+/* CSS styles for the front and back side of the card */
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* Set the background color for the card sides */
+    border: 1px solid #ccc;
+    /* Add a border around the card sides */
+    border-radius: 10px;
+    /* Add rounded corners to the card */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow to the card */
+    transition: transform 0.6s;
+    /* Add a smooth transition effect when flipping the card */
+}
+
+/* CSS styles for the back side of the card */
+.card-back {
+    transform: rotateY(180deg);
+    /* Initially hide the back side of the card by rotating it */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS for the social networks in the footer */
+.main_footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .main_footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main_footer li {
+    margin: 0 10px;
+}
+
+.social-links {
+    font-size: 24px;
+    color: #1B366A;
+}
+
+.main_footer li:hover {
+    transform: scale(1.5);
+}
+
+
+/* CSS styles for the image on the back side of the card */
+#image {
+    margin-bottom: 10px;
+}
+
+/* CSS styles for the buttons */
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #e8e818;
+    color: #1B366A;
+}
+
+/* CSS styles for the "Back" button */
+#backButton {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    order: 1;
+}
+
+/* CSS styles for the "Next" button */
+#nextButton {
+    margin-top: 10px;
+    display: inline-block;
+    /* Initially hide the "Next" button */
+    order: 3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    order: 2;
+}
+
+/* CSS styles for the buttons and the letter on the front side of the card */
+button,
+.card-front h2 {
+    font-weight: bold;
+}
+
+/* CSS styles for the "Back" and "Next" buttons on hover */
+#backButton:hover,
+#nextButton:hover {
+    background-color: #e8e818;
+    /* Change the background color on hover */
+    color: #1B366A;
+    /* Change the text color on hover */
+}
+
+/* CSS styles for the card when hovered to flip to the back side */
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+/* CSS styles for the card when hovered to flip back to the front side */
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* --- << quiz page >> --- */
+
+
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.draggable-objects,
+.drop-points {
+    display: flex;
+    justify-content: space-around;
+    padding: 0em;
+
+}
+
+.draggable-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: move;
+}
+
+.draggable-element img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5em;
+    margin-right: 10px;
+}
+
+.drop-point {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    margin: 1em;
 
 }
 
-.main_footer ul {
-    list-style-type: none;
+.controls-container {
+    text-align: center;
+    margin-top: 1em;
 }
 
-.main_footer a i {
-    font-size: 2rem;
-    color: #1B366A;
+#nextButton {
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 0.4em;
+    background-color: #5372ef;
+    color: #ffffff;
+    cursor: pointer;
 }
