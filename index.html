@@ -17,23 +17,61 @@
 <body>
     <!--Header -->
 
+
     <header class="menu">
-        <h1 class="app_name">Fun Learn</h1>
-        <p class="app_slogan">Where Learning is Playful!</p>
+        <div class="title">
+            <h1 class="app_name">Fun Learn</h1>
+            <p class="app__slogan">Where Learning is Playful!</p>
+        </div>
     </header>
 
     <!-- Main menu -->
 
     <main class="mainpage_menus">
+        <button id="openRulesButton">RULES</button>
 
-        <!--Link to the card.html-->
+        <div class="modal" id="rulesModal">
+            <div class="modal-content">
+                <h2>Rules for alphabets</h2>
+                <p>1.Front Side of the Card:
 
-        <div class="rules">
-            <a href="#" aria-label="go to rules for fun learn app" class="mainmenu_btn">RULES</a>
+                    The front side of the card will display a letter of the alphabet in a large font.</p>
+                <p>2.Back Side of the Card:
+
+                    When you click on the letter card, it will flip to the back side.
+                    The back side will display:
+                    An image corresponding to the letter (e.g., an apple image for the letter "Aa").
+                    The word associated with the letter (e.g., "Apple" for the letter "Aa").
+                    If click the image to hear the pronunciation of the word in British English accent
+                    <p>3.Shuffled Alphabet Order:
+
+                        The alphabet cards will appear in a shuffled order, not in the correct alphabetical sequence.
+                    </p>
+                    <p>4.Starting Card:
+
+                        The app will start with a randomly selected alphabet card.</p>
+                    <p>5.Letter Representation:
+
+                        Uppercase and lowercase letters will be used to represent the alphabet.</p>
+
+                    <h2>Alphabet Drag and Drop Quiz Game</h2>
+                    <p>1.The game consists of a set of alphabet images and an empty word container.</p>
+                    <p>2.The alphabet images are draggable and can be moved by clicking and dragging them</p>
+                    <p>3.The player's task is to match the correct word to the displayed alphabet image by dragging and
+                        dropping the image over the empty word container.</p>
+                    <p>4.Each time an alphabet image is dropped, the game checks if the word matches the correct word
+                        for that alphabet.</p>
+                    <p>5.If the word matches correctly, the word container will be filled with the word, and the next
+                        alphabet image will appear.</p>
+                    <p>6.If the word does not match the correct word for the alphabet, the image will return to its
+                        original position, and the player can try again.</p>
+                    <p>7.The game continues until all alphabet images have been matched with their correct words.</p>
+
+                    <button id="closeModalButton">Close</button>
+            </div>
         </div>
-        <div class="enter">
-            <a href="option.html" aria-label="go to options alphabets or numbers" class="mainmenu_btn">ENTER</a>
-        </div>
+
+        <button id="redirectButton">START</button>
 
     </main>
     <!-- Footer -->
@@ -55,8 +93,6 @@
     </footer>
     <!--Link for FontAwesome icons-->
     <script src="https://kit.fontawesome.com/808d24aade.js" crossorigin="anonymous"></script>
-    <!--Script for js file-->
-
     <script src="assets/js/menu.js"></script>
 </body>
 

@@ -18,6 +18,9 @@
     <!--Header -->
 
     <header class="menu">
+        <a href="options.html" aria-label="return back to alphabet option page" class="return-button">
+            <i class="fa-solid fa-circle-left"></i>
+        </a>
         <div class="title">
             <h1 class="app_name">Fun Learn</h1>
             <p class="app__slogan">Where Learning is Playful!</p>
@@ -25,17 +28,17 @@
     </header>
 
     <!-- Main menu -->
-
-    <main class="mainpage_menus">
-
-        <!--Link to the card.html-->
-
-        <div class="alpahabets_order">
-            <a href="alphabetsoption.html" aria-label="go to rules for fun learn app" class="mainmenu_btn">ALPHABETS</a>
+    <div class="quiz_container">
+        <h3>Drag & Drop The Images Over Their Respective Words</h3>
+        <!-- Container for draggable alphabet images -->
+        <div class="draggable-objects"></div>
+        <!-- Container for drop points with corresponding words -->
+        <div class="drop-points"></div>
+        <!-- Container for "Play Again" button -->
+        <div class="play-again-container">
+            <button class="play-again-button hide">Play Again</button>
         </div>
-        <div class="alpahabets_unorder">
-            <a href="numberoption.html" aria-label="go to options alphabets or numbers" class="mainmenu_btn">NUMBERS</a>
-        </div>
+    </div>
     </main>
     <!-- Footer -->
     <footer class="main_footer">
@@ -58,7 +61,7 @@
     <script src="https://kit.fontawesome.com/808d24aade.js" crossorigin="anonymous"></script>
     <!--Script for js file-->
 
-    <script src="assets/js/alphabets.js"></script>
+    <script src="assets/js/quiz.js"></script>
 </body>
 
 </html>

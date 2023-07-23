@@ -14,11 +14,12 @@
     <title>Fun Learn</title>
 </head>
 
-<body onload="initializeApp()">
+<body>
     <!--Header -->
 
+
     <header class="menu">
-        <a href="letteroption.html" class="return-button">
+        <a href="index.html" aria-label="return back to alphabet option page" class="return-button">
             <i class="fa-solid fa-circle-left"></i>
         </a>
         <div class="title">
@@ -30,26 +31,13 @@
     <!-- Main menu -->
 
     <main class="mainpage_menus">
-        <!-- Card element with a flip functionality when clicked -->
-        <div class="card" onclick="flipCard()">
-            <!-- Front side of the card -->
-            <div class="card-front">
-                <h2 id="letter">A</h2> <!-- Placeholder for the letter -->
-            </div>
-            <!-- Back side of the card -->
-            <div class="card-back">
-                <img id="image" src="assets/images/apple.png" alt="Apple" width="200" height="200">
-                <!-- Image of the item -->
-                <p id="word">Apple</p> <!-- Word corresponding to the letter -->
-            </div>
-        </div>
-        <div class="button-container">
-            <!-- Button to go to the previous letter -->
-            <button id="backButton" onclick="previousLetter()" style="display: none;">Back</button>
 
-            <!-- Button to go to the next letter -->
-            <button id="nextButton" onclick="nextLetter()">Next</button>
-        </div>
+        <button onclick="window.location.href='alphabets.html'" aria-label="go to english alphabets learning page"
+            class="mainmenu_btn">ALPHABETS</button>
+
+        <button onclick="window.location.href='quiz.html'"
+            aria-label="go to drag and drop alphabets images and words game" class="mainmenu_btn">GAME</button>
+
     </main>
     <!-- Footer -->
     <footer class="main_footer">

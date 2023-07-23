@@ -1,156 +1,156 @@
 // Array of alphabet objects with images and words
 const alphabetDictionary = [{
-        letter: "A",
+        letter: "Aa",
         image: 'assets/images/alphabets/apple.png',
         imageAlt: 'apple fruit',
         word: 'Apple'
     },
     {
-        letter: "B",
+        letter: "Bb",
         image: 'assets/images/alphabets/ball.png',
         imageAlt: 'football',
         word: 'Ball'
     },
     {
-        letter: "C",
+        letter: "Cc",
         image: 'assets/images/alphabets/cat.png',
         imageAlt: 'cat',
         word: 'Cat'
     },
     {
-        letter: "D",
+        letter: "Dd",
         image: 'assets/images/alphabets/dog.png',
         imageAlt: 'dog',
         word: 'Dog'
     },
     {
-        letter: "E",
+        letter: "Ee",
         image: 'assets/images/alphabets/elephant.png',
         imageAlt: 'elephant',
         word: 'Elephant'
     },
     {
-        letter: "F",
+        letter: "Ff",
         image: 'assets/images/alphabets/fish.png',
         imageAlt: 'fish',
         word: 'Fish'
     },
     {
-        letter: "G",
+        letter: "Gg",
         image: 'assets/images/alphabets/grape.png',
         imageAlt: 'grapes',
         word: 'Grapes'
     },
     {
-        letter: "H",
+        letter: "Hh",
         image: 'assets/images/alphabets/hat.png',
         imageAlt: 'hat',
         word: 'Hat'
     },
     {
-        letter: "I",
+        letter: "Ii",
         image: 'assets/images/alphabets/ice-cream.png',
         imageAlt: 'ice cream',
         word: 'Ice Cream'
     },
     {
-        letter: "J",
+        letter: "Jj",
         image: 'assets/images/alphabets/jug.png',
         imageAlt: 'glass jug',
         word: 'Jug'
     },
     {
-        letter: "K",
+        letter: "Kk",
         image: 'assets/images/alphabets/kite.png',
         imageAlt: 'kite',
         word: 'Kite'
     },
     {
-        letter: "L",
+        letter: "Ll",
         image: 'assets/images/alphabets/leaf.png',
         imageAlt: 'green leaf',
         word: 'Leaf'
     },
     {
-        letter: "M",
+        letter: "Mm",
         image: 'assets/images/alphabets/monkey.png',
         imageAlt: 'monkey',
         word: 'Monkey'
     },
     {
-        letter: "N",
+        letter: "Nn",
         image: 'assets/images/alphabets/nest.png',
         imageAlt: 'nest contains two eggs',
         word: 'Nest'
     },
     {
-        letter: "O",
+        letter: "Oo",
         image: 'assets/images/alphabets/onion.png',
         imageAlt: 'onion',
         word: 'Onion'
     },
     {
-        letter: "P",
+        letter: "Pp",
         image: 'assets/images/alphabets/pen.png',
         imageAlt: 'pen',
         word: 'Pen'
     },
     {
-        letter: "Q",
+        letter: "Qq",
         image: 'assets/images/alphabets/queen.png',
         imageAlt: 'queen',
         word: 'Queen'
     },
     {
-        letter: "R",
+        letter: "Rr",
         image: 'assets/images/alphabets/rabbit.png',
         imageAlt: 'rabbit',
         word: 'Rabbit'
     },
     {
-        letter: "S",
+        letter: "Ss",
         image: 'assets/images/alphabets/sun.png',
         imageAlt: 'sun',
         word: 'Sun'
     },
     {
-        letter: "T",
+        letter: "Tt",
         image: 'assets/images/alphabets/tiger.png',
         imageAlt: 'tiger',
         word: 'Tiger'
     },
     {
-        letter: "U",
+        letter: "Uu",
         image: 'assets/images/alphabets/umbrella.png',
         imageAlt: 'umbrella',
         word: 'Umbrella'
     },
     {
-        letter: "V",
+        letter: "Vv",
         image: 'assets/images/alphabets/violin.png',
         imageAlt: 'violin',
         word: 'Violin'
     },
     {
-        letter: "W",
+        letter: "Ww",
         image: 'assets/images/alphabets/watermelon.png',
         imageAlt: 'watermelon',
         word: 'Watermelon'
     },
     {
-        letter: "X",
+        letter: "Xx",
         image: 'assets/images/alphabets/xylophone.png',
         imageAlt: 'xylophone',
         word: 'Xylophone'
     },
     {
-        letter: "Y",
+        letter: "Yy",
         image: 'assets/images/alphabets/yolk.png',
         imageAlt: 'egg yolk',
         word: 'Yolk'
     },
     {
-        letter: "Z",
+        letter: "Zz",
         image: 'assets/images/alphabets/zebra.png',
         imageAlt: 'zebra',
         word: 'Zebra'
